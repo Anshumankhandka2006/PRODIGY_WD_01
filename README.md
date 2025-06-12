@@ -1,1 +1,1 @@
-# PRODIGY_WD_01
+# PRODIGY_WD_01  It is a repository for the first task which is assigned to me in my internship journey with the Prodigy Info Tech . My first task is to make a responsive landing page . You can checkout on the vercel link to see the result
