@@ -1,28 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Interactive Navigation Menu</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation Menu -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Brand</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-  <nav id="navbar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Page Sections -->
+    <section id="home" class="section hero-section">
+        <div class="container">
+            <h1>Welcome to Our Interactive Navigation</h1>
+            <p>Scroll down to see the navigation menu change colors and styles!</p>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
 
-  <div class="content">
-    <h1>Welcome!</h1>
-    <p>Scroll down to see the effect...</p>
-    <div style="height: 1500px;"></div>
-  </div>
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>This section demonstrates how the navigation menu adapts as you scroll through different sections of the page. Notice how the background color changes and becomes more opaque.</p>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Interactive Design</h3>
+                    <p>Our navigation menu responds to user interactions with smooth transitions and modern styling.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Fixed Position</h3>
+                    <p>The menu stays visible at all times, providing easy access to navigation options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <section id="services" class="section services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Hover over the navigation items to see beautiful hover effects with color transitions and subtle animations.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and interactive web experiences with modern technologies.</p>
+                </div>
+                <div class="service-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Designing user-friendly interfaces with attention to detail and user experience.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile Apps</h3>
+                    <p>Building cross-platform mobile applications with native performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <p>Continue scrolling to see how the navigation maintains its functionality across all sections.</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image"></div>
+                    <h3>Project One</h3>
+                    <p>An innovative web application with dynamic user interfaces.</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"></div>
+                    <h3>Project Two</h3>
+                    <p>A mobile-first responsive website with interactive elements.</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image"></div>
+                    <h3>Project Three</h3>
+                    <p>A full-stack application with real-time data visualization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>The navigation menu demonstrates consistent behavior throughout all sections of the website, maintaining its interactive features and visual appeal.</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Email: hello@example.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Address: 123 Web Street, Digital City</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Message</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
